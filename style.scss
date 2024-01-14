@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 1170px;
+  padding: 0 10px;
+  margin: 0px auto;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+$headind-color: #3a3a3a;
+$pra-color: #787885;
+$headind2: #18191f;
+$btn-color: #e02c6d;
+$link-color: #d9dbe1;
+.pry-btn {
+  background-color: #e02c6d;
+  color: #fff;
+  border-radius: 41px;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: #d9dbe1;
+    color: #e02c6d;
+  }
+}
+section {
+  margin: 20px 0;
+}
+// header
+header {
+  h3 {
+    color: $headind-color;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      gap: 30px;
+      li {
+        a {
+          color: $headind-color;
+          font-weight: 600;
+          transition: all 0.3s ease;
+          &:hover {
+            color: $btn-color;
+          }
+        }
+      }
+    }
+  }
+  .header-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    .banner-text {
+      h1 {
+        color: $headind-color;
+        font-size: 3.25rem;
+      }
+      p {
+        color: $headind-color;
+        font-weight: 600;
+      }
+      a {
+        margin-top: 20px;
+      }
+    }
+    .banner-img {
+      img {
+        margin-top: 40px;
+        background-image: url("images/Circle\ design.svg");
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+}
+// header
+// main
+.logo {
+  .main-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    img {
+      display: block;
+    }
+  }
+}
+// main end
+// media
+@media screen and (max-width: 576px) {
+  nav,
+  .header-banner {
+    flex-direction: column;
+  }
+  .banner-img {
+    height: 100%;
+  }
+}
